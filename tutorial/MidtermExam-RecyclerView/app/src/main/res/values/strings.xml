@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MiddleTest</string>
+    <string name="text_thong_tin_sinh_vien">Thông tin sinh viên</string>
+    <string name="name">Họ tên</string>
+    <string name="age">Tuổi</string>
+    <string name="address">Địa chỉ</string>
+    <string name="plus">+</string>
+</resources>
