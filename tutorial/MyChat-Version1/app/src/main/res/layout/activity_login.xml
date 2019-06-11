@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+
+        <ImageView
+            android:layout_width="153dp"
+            android:layout_height="175dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/login" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:layout_marginBottom="100dp"
+                android:hint="email"
+                android:inputType="textEmailAddress"
+                android:textColor="@android:color/widget_edittext_dark"
+                android:textColorHint="@android:color/white"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:textColor="@android:color/widget_edittext_dark"
+                android:textColorHint="@android:color/white"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_login"
+            android:background="@color/colorPrimary"
+            android:text="Done"
+            android:textColor="@android:color/black"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_reset_pass"
+            android:background="@null"
+            android:text="Forgot Password"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_signup"
+            android:background="@null"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textSize="15dp"
+            />
+    </LinearLayout>
+    <ProgressBar
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:id="@+id/progressbar"
+    android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+    />
+
+</android.support.design.widget.CoordinatorLayout>
